@@ -18,6 +18,8 @@ DEFAULTS = {
     'ALGORITHM': 'HS256',
     'SIGNING_KEY': settings.SECRET_KEY,
     'VERIFYING_KEY': None,
+    'USER_ID_TO_USER': None,
+    'USER_TO_USER_ID': None,
 
     'AUTH_HEADER_TYPES': ('Bearer',),
     'USER_ID_FIELD': 'id',
@@ -35,6 +37,8 @@ DEFAULTS = {
 
 IMPORT_STRINGS = (
     'AUTH_TOKEN_CLASSES',
+    'USER_ID_TO_USER',
+    'USER_TO_USER_ID',
 )
 
 REMOVED_SETTINGS = (
