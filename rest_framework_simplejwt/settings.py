@@ -16,7 +16,9 @@ DEFAULTS = {
     'BLACKLIST_AFTER_ROTATION': True,
 
     'ALGORITHM': 'HS256',
-    'SIGNING_KEY': settings.SECRET_KEY,
+    'JWT_SECRET_KEY': settings.SECRET_KEY,
+    'GET_USER_SECRET_KEY': None,
+    'SIGNING_KEY': None,
     'VERIFYING_KEY': None,
     'AUDIENCE': None,
     'ISSUER': None,
